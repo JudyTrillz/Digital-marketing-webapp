@@ -356,10 +356,17 @@ body{
     padding-top: 10rem;
 }
 
-
-
-
 /** ------------------- End of Banner area Styling---------------- */
+
+
+
+/** ------------------- Agency area Styling---------------- */
+#site-main .agency-area{
+    padding: 5em 0;
+}
+
+/** ------------------- End of Agency area Styling---------------- */
+
 
 
 
@@ -407,6 +414,9 @@ body{
 
     .active{
         max-height: 100%!important;
+    }
+    .lg-cols-3{
+        grid-template-columns: repeat(3, minmax(0,1fr));
     }
 }
 
