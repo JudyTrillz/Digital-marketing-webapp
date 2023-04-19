@@ -230,7 +230,17 @@ body{
     transition: .3s ease;
 }
 
+.link2{
+    color: var(--text-dark);
+    transition: .3s ease;
+}
+
+
 .link:hover{
+    color: var(--text-red);
+}
+
+.link2:hover{
     color: var(--text-red);
 }
 
@@ -498,6 +508,43 @@ body{
 
 
 
+/** -------------------  Footer Area Styling---------------- */
+#footer{
+    border-top: 2px solid var(--text-light);
+    margin-top: 8em;
+}
+
+#footer .grid{
+    column-gap: 3em;
+    padding: 6em 0;
+    border-bottom: 2px solid var(--text-light);
+}
+
+#footer .grid input,
+#footer .grid input:focus{
+    border: none;
+    background-color: var(--text-light);
+    padding: 1em;
+    font-size: 1em;
+    color: var(--text-dark);
+    font-family: var(--font);
+    border: none;
+    outline: none;
+}
+
+#footer .grid button{
+    background: var(--bg-gradient);
+    padding: 0 2em;
+    font-size: 1em;
+    color: var(--text-light);
+    font-family: var(--font);
+}
+
+#footer .grid button:hover{
+    background: var(--bg-gradient-indigo);
+    color: var(--text-light);
+}
+/** -------------------  End of Footer Area Styling---------------- */
 
 
 
@@ -537,6 +584,10 @@ body{
     .md-mx-initial{
         margin: initial;
     }
+
+    .md-cols-2{
+        grid-template-columns: repeat(2, minmax(0,1fr));
+    }
 }
 
 /* for large screen lg(1024px) */
@@ -570,6 +621,11 @@ body{
 
     .lg-cols-3{
         grid-template-columns: repeat(3, minmax(0,1fr));
+    }
+
+    .lg-cols-4{
+        grid-template-columns: repeat(4, minmax(0,1fr));
+
     }
 }
 
