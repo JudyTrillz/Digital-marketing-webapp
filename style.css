@@ -8,19 +8,20 @@
     --text-light: hsl(0, 0%, 96%);
     --text-dark: hsl(219, 57%, 24%);
     --text-dark2: hsla(215, 57%, 24%, 0.831);
-    --text-red: hsl(349, 100%, 65%);
+    --text-red: #f0667f;
 
     /* box  shadow variable */
     --box-shadow: 0px 0px 50px 0px rgb(0 0 0/10%);
 
     /* background variable */
-    --bg-blue: hsl(245, 55%, 64%);
-    --bg-red: hsl(351, 82%, 72%);
-    --bg-yellow: hsl(60, 74%, 76%);
-    --bg-purple: hsl(295, 68%, 69%); 
+    --bg-blue: hsl(245, 69%, 84%);
+    --bg-red: hsl(351, 59%, 88%);
+    --bg-yellow: hsl(60, 69%, 84%);
+    --bg-purple: hsl(296, 54%, 85%); 
 
     /* Gradient colors */
     --bg-gradient: linear-gradient(to right, #ff512e, #dd2276); 
+    --bg-gradient-blue: linear-gradient(to right, #DBF3FA, #DBF3FA);
     --bg-gradient-indigo: linear-gradient(to right, #8d2ce2, #4b00e0);
     --bg-gradient-peach: linear-gradient(to right, #fde3d0, #fde3d0);
 
@@ -97,6 +98,10 @@ body{
 
 .bg-gradient-peach{
     background: var(--bg-gradient-peach);
+}
+
+.bg-gradient-blue{
+    background: var(--bg-gradient-blue);
 }
 
 .bg-red{
@@ -445,6 +450,13 @@ body{
 
 
 
+/** -------------------  Card Area Styling---------------- */
+#site-main .card-area .grid{
+    column-gap: 3em;
+    row-gap: 2em;
+}
+
+/** -------------------  End of Card Area Styling---------------- */
 
 
 
