@@ -455,8 +455,23 @@ body{
     column-gap: 3em;
     row-gap: 2em;
 }
-
 /** -------------------  End of Card Area Styling---------------- */
+
+
+
+/** -------------------  Recent Work Area Styling---------------- */
+#site-main .recent-work-area .images-flex .flex-item{
+    width: 100%;
+    margin-bottom: 50px;
+    width: 360px;
+}
+
+#site-main .recent-work-area .images-flex .flex-item img{
+    border-radius: 10px;
+}
+
+/** -------------------  End of Recent Work Area Styling---------------- */
+
 
 
 
