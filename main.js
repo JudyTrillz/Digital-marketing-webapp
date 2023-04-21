@@ -18,3 +18,7 @@ window.onload=function digital_fn(){
         fitWidth: true
     })
 }
+
+const rellax = new Rellax('.rellax',{
+    center:true
+});

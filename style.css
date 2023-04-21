@@ -61,6 +61,10 @@ ul{
 
 body{
     font-family: var(--font);
+    width: 100%;
+    min-height: 100vh;
+    background: url('./assets/backgroundpng.png') no-repeat;
+    background-size: cover;
 }
 
 /** ------------------- /global styles---------------- */
@@ -371,6 +375,10 @@ body{
     padding-top: 16rem;
 }
 
+.text-sm-light{
+    color: var(--text-light);
+}
+
 /** ------------------- End of Banner area Styling---------------- */
 
 
@@ -520,6 +528,15 @@ body{
     border-bottom: 2px solid var(--text-light);
 }
 
+#footer .grid button{
+    background: var(--bg-gradient);
+    margin-top: .5rem;
+    padding: 0 2em;
+    font-size: 1em;
+    color: var(--text-light);
+    font-family: var(--font);
+}
+
 #footer .grid input,
 #footer .grid input:focus{
     border: none;
@@ -569,6 +586,24 @@ body{
         padding-left: 3.5rem;
         padding-right: 3.5rem;
     }
+
+    #site-main .article-area .grid{
+        row-gap: 5em;
+    }
+
+    #footer .grid input,
+    #footer .grid input:focus{
+        width: 100%;
+    }
+
+    .lg-text-dark{
+        color: var(--text-dark);
+    }
+
+    .lg-text-gray{
+        color: var(--text-gray);
+    }
+
 }
 
 /* for large screen md(768px) */
@@ -587,6 +622,38 @@ body{
 
     .md-cols-2{
         grid-template-columns: repeat(2, minmax(0,1fr));
+    }
+
+    .flex{
+        flex-direction: row;
+    }
+
+    .lg-text-dark{
+        color: var(--text-dark);
+    }
+
+    .lg-text-gray{
+        color: var(--text-gray);
+    }
+
+    #site-main .article-area .grid{
+        row-gap: 5em;
+    }
+
+    #footer .grid input,
+    #footer .grid input:focus{
+        width: 100%;
+    }
+
+    #footer .grid button{
+        background: var(--bg-gradient);
+        margin-top: .5rem;
+        padding: 0 2em;
+        font-size: 1em;
+        color: var(--text-light);
+        font-family: var(--font);
+        /* width: 100%;
+        height: 40px; */
     }
 }
 
